@@ -1,0 +1,30 @@
+{
+  "name": "proshop-v2",
+  "version": "1.0.0",
+  "description": "ecommerce App",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "node backend/server.js",
+    "server": "nodemon backend/server.js",
+    "client":"npm start --prefix frontend",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/billnasir/MERN-Stack-Project.git"
+  },
+  "author": "Billy Nasir",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/billnasir/MERN-Stack-Project/issues"
+  },
+  "homepage": "https://github.com/billnasir/MERN-Stack-Project#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "concurrently": "^8.0.1",
+    "nodemon": "^2.0.22"
+  }
+}
